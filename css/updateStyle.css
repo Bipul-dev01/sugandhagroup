@@ -1142,3 +1142,83 @@ section .title-customer::after {
 /* ******************************************************
   Message Wrapper Part Style End
 ******************************************************  */
+
+/* Fixed Social Icons CSS Start */
+.socialBar{
+  position: fixed;
+  height: auto;
+  top: 40vb;
+}
+.socialBar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialBar li {
+  margin: 10px 0;
+}
+
+.socialBar a{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  /* transition: background .5s ease; */
+}
+.socialBar ion-icon{
+  font-size: 26px;
+  padding: 10px;
+}
+.socialBar span{
+  position: absolute;
+  left: 100px;
+  padding: 8px 15px;
+  transition: all .5s;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all .5s;
+}
+.socialBar a:hover span{
+  opacity: 1;
+  left: 65px;
+}
+.socialBar span::after{
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -20px;
+  border-left: 10px solid transparent ;
+  border-right: 10px solid ;
+  border-bottom: 10px solid transparent ;
+  border-top: 10px solid transparent;
+}
+.facebook *{
+  background: #3b5998 ;
+  border-top-right-radius: 5px ;
+}
+.instagram *{
+  background: #ea4c89 ;
+}
+.youtube *{
+  background: #ef402d ;
+}
+.linkedin *{
+  background: #267a28 ;
+  border-top-right-radius: 5px ;
+}
+
+.socialBar .facebook span::after{
+  border-right-color: #3b5998 ;
+}
+.socialBar .instagram span::after{
+  border-right-color: #ea4c89 ;
+}
+.socialBar .youtube span::after{
+  border-right-color: #ef402d ;
+}
+.socialBar .linkedin span::after{
+  border-right-color: #267a28 ;
+}
+/* Fixed Social Icons CSS End */

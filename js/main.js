@@ -1,15 +1,30 @@
+
+// Preloader
+
+// function loaderAnimation() {
+//     var loader = document.querySelector("#loading")
+//     setTimeout(function () {
+//         loader.style.top = "-100%"
+//     }, 2200)
+// }
+
+// loaderAnimation()
+
+
 (function ($) {
     "use strict";
 
+
+
     // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 2000);
-    };
-    spinner();
+    // var spinner = function () {
+    //     setTimeout(function () {
+    //         if ($('#spinner').length > 0) {
+    //             $('#spinner').removeClass('show');
+    //         }
+    //     }, 2000);
+    // };
+    // spinner();
     
     
     // Initiate the wowjs
