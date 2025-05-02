@@ -298,7 +298,7 @@ section .title::after {
   object-position: center;
   border-radius: 15px;
   /* padding: 6px; */
-  z-index: 1000;
+  z-index: 100;
   /* border: 3px solid green; */
 }
 .about .about-content .left {
