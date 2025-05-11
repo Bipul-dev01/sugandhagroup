@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 ::-webkit-scrollbar{width: 6px;}
 ::-webkit-scrollbar-track{background-color: transparent;}
 ::-webkit-scrollbar-thumb{background-color: green;}
@@ -1222,3 +1225,185 @@ section .title-customer::after {
   border-right-color: #267a28 ;
 }
 /* Fixed Social Icons CSS End */
+
+
+
+/* Images sliding Light box CSS start */
+.slidingContaiber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+.wrapper{
+    max-width: 1200px;
+}
+.wrapper .gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery span{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.gallery .image{
+    /* width: 100%; */
+    width: calc(100% / 3);
+    padding: 7px;
+}
+.wrapper .gallery img{
+    max-height: 500px;
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+}
+.wrapper .gallery .image:hover img{
+    transform: scale(1.2);
+}
+
+@media (max-width : 1000px){
+    .gallery .image{
+        width: calc(100% / 2);
+    }
+}
+@media (max-width : 600px){
+    .gallery .image{
+        padding: 4px;
+        width: 100% ;
+    }
+}
+.preview-box{
+    position: fixed;
+    height: 80%;
+    max-width: 600px;
+    /* max-width: 700px; */
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #fff;
+    padding: 0 5px 5px 5px;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.preview-box.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+}
+.preview-box .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px 12px 10px;
+}
+.preview-box .details .icon{
+    color: #007bff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.details .title{
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+}
+.details .title p{
+    margin: 0 5px;
+}
+.details .title p.current-img{
+    font-weight: 600;
+}
+.preview-box .image-box{
+    display: flex;
+    width: 100%;
+}
+.image-box .slide{
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    width: 60px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.image-box .slide.prev{
+    left: 0;
+}
+.image-box .slide.next{
+    right: 0;
+}
+.preview-box .image-box img{
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+
+.shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0,0,0,0.4);
+}
+/* Images sliding Light box CSS end */
+
+
+/* Cake Image style start */
+ .category-box {
+      background-color: #f9f9f9;
+      border-radius: 55px;
+      padding: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+    .category-box a{
+      pointer-events: none;
+    }
+
+    .category-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    }
+
+    .category-img {
+      /* max-width: 100%; */
+      height: 260px;
+      width: 260px;
+      object-fit: cover;
+      border-radius: 50px;
+      /* margin-bottom: 15px; */
+      transition: transform 0.3s ease;
+    }
+
+    .category-img:hover {
+      transform: scale(1.05);
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #333;
+    }
+
+    .category-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .category-link:hover h5 {
+      color: #d63384; /* Bootstrap pink */
+    }
+/* Cake Image style end */
