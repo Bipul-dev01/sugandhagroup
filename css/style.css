@@ -622,6 +622,25 @@ h6,
     background-size: cover;
     height: 350px;
 }
+.bg-header-lubricant {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../images/others/lubricant.png) center center no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.bg-header-enterprise {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../images/others/enterprise.png) center center no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.bg-header-consumerProducts {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../images/others/consumerproduct.jpg) center center no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+
+
+
 
 .link-animated a {
     transition: .5s;
