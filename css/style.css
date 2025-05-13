@@ -239,8 +239,8 @@ h6,
 }
 @media (max-width:460px){
     .navbar{
-        padding-left: 1rem !important;
-        padding-right: 1.5rem !important;
+        padding-left: .2rem !important;
+        padding-right: .5rem !important;
     }
     .navbar a{
         padding-right: 5px;
@@ -293,6 +293,7 @@ h6,
   justify-content: center;
   padding: 50px 20px;
   /* gap: 20px; */
+  
 }
 
 .facts .fact-box {
@@ -307,7 +308,7 @@ h6,
   color: white;
   /* border-radius: 8px; */
   transition: transform 0.3s;
-  margin-top: -60px;
+  margin-top: -50px;
 }
 
 .facts .fact-box.light {
@@ -403,19 +404,20 @@ h6,
   .facts .fact-box {
     height: 130px;
     padding: 10px 8px;
+    margin-top: 5px;
   }
 
   .facts .content h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .facts .content h5 {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .facts .icon-box {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     font-size: 18px;
   }
 }
