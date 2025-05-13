@@ -7,16 +7,15 @@
 
 
 
-/* **********************************************************
-    Moving Text Styling Start
-********************************************************** */
+
+/* Moving Text Styling Start */
+
 .moving {
   min-height: 20vh;
-  margin-top: -140px;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 20px;
   width: 100%;
-  /* background-color: #f5f4f2; */
+  background-color: #f5f4f2;
   white-space: nowrap;
 }
 .moving-text {
@@ -61,7 +60,7 @@
   /* Home Section Moving Text */
   .moving {
     min-height: 10vh;
-    margin-top: -130px;
+    /* margin-top: -130px; */
     width: 100%;
   }
   .moving-text {
@@ -78,6 +77,10 @@
     margin: 0 1vw;
   }
 }
+/* Moving Text Styling End */
+
+
+
 
 /* Honeycomb Section */
 

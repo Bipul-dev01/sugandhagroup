@@ -237,6 +237,19 @@ h6,
         color: var(--primary);
     }
 }
+@media (max-width:460px){
+    .navbar{
+        padding-left: 1rem !important;
+        padding-right: 1.5rem !important;
+    }
+    .navbar a{
+        padding-right: 5px;
+    }
+    .navbar a h1{
+        font-size: 23px;
+    }
+}
+
 
 
 /*** Carousel ***/
@@ -347,8 +360,6 @@ h6,
 .facts .text-primary {
   color: #007bff;
 }
-
-/* Facts Style End  */
 @media (min-width: 991.98px) {
     .facts {
         position: relative;
@@ -356,6 +367,60 @@ h6,
         z-index: 1;
     }
 }
+/* Responsive for screens up to 768px */
+@media (max-width: 768px) {
+  .facts {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+  }
+
+  .facts .fact-box {
+    width: 100%;
+    max-width: 90%;
+    margin: 10px 0;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .facts .icon-box {
+    margin: 0 0 15px 0;
+  }
+
+  .facts .content h1 {
+    font-size: 36px;
+  }
+
+  .facts .content h5 {
+    font-size: 20px;
+  }
+}
+
+/* Extra small screens - up to 460px */
+@media (max-width: 460px) {
+  .facts .fact-box {
+    height: 130px;
+    padding: 10px 8px;
+  }
+
+  .facts .content h1 {
+    font-size: 25px;
+  }
+
+  .facts .content h5 {
+    font-size: 17px;
+  }
+
+  .facts .icon-box {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* Facts Style End  */
 
 
 /*** Section Title ***/
