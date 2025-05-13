@@ -14,31 +14,30 @@
 (function ($) {
     "use strict";
 
-
-
-    // Spinner
-    // var spinner = function () {
-    //     setTimeout(function () {
-    //         if ($('#spinner').length > 0) {
-    //             $('#spinner').removeClass('show');
-    //         }
-    //     }, 2000);
-    // };
-    // spinner();
-    
     
     // Initiate the wowjs
     new WOW().init();
 
 
     // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-            $('.navbar').addClass('sticky-top shadow-sm');
-        } else {
-            $('.navbar').removeClass('sticky-top shadow-sm');
-        }
-    });
+
+    window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('sticky-top', 'shadow-sm');
+    } else {
+        navbar.classList.remove('sticky-top', 'shadow-sm');
+    }
+});
+
+    
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 45) {
+    //         $('.navbar').addClass('sticky-top shadow-sm');
+    //     } else {
+    //         $('.navbar').removeClass('sticky-top shadow-sm');
+    //     }
+    // });
     
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");

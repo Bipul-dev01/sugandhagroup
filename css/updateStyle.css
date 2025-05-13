@@ -1707,13 +1707,13 @@ section .title-customer::after {
   line-height: 1.6;
   background: linear-gradient(to right, #e0f7fa, #f1f8e9); /* Colorful gradient */
   color: #222;
-  padding: 60px 30px;
+  padding: 40px 20px;
 }
 
 .about-section .container {
   max-width: 1300px; /* Wider section */
   margin: auto;
-  padding: 40px;
+  padding: 20px;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
@@ -1732,7 +1732,7 @@ section .title-customer::after {
 .about-section p {
   margin-bottom: 18px;
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .about-section ul {
@@ -1751,7 +1751,7 @@ section .title-customer::after {
 
 .about-section .images img {
   width: 100%;
-  max-width: 420px;
+  max-width: 440px;
   height: 280px;
   border-radius: 10px;
   object-fit: cover;
