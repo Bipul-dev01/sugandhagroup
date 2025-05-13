@@ -243,6 +243,7 @@ h6,
     .navbar{
         padding-left: .2rem !important;
         padding-right: 1rem !important;
+        z-index: 9999999;
     }
     .navbar a{
         margin-left: 10px;
