@@ -1696,3 +1696,92 @@ section .title-customer::after {
   }
 
 /* Sugandha Consumer Products style end */
+
+
+/* Anam Homoeo style start */
+.about-section {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9); /* Colorful gradient */
+  color: #222;
+  padding: 60px 30px;
+}
+
+.about-section .container {
+  max-width: 1300px; /* Wider section */
+  margin: auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+  text-align: center;
+  color: #009688; /* Teal shade */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  border-bottom: 3px solid #80cbc4;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.about-section p {
+  margin-bottom: 18px;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.about-section ul {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.about-section .images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.about-section .images img {
+  width: 100%;
+  max-width: 420px;
+  height: 280px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-section .images img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .about-section .images img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section .images img {
+    width: 90%;
+    height: auto;
+  }
+
+  .about-section h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Anam Homoeo style end */
