@@ -255,12 +255,6 @@ h6,
     .navbar .dropdown-menu .dropdown-item{
         padding-left: 50px !important;
     }
-    .carousel h5{
-        font-size: 18PX;
-    }
-    .carousel h1{
-        font-size: 21PX;
-    }
 }
 
 
@@ -275,15 +269,18 @@ h6,
     z-index: 1;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 460px) {
     .carousel-caption h5 {
         font-size: 14px;
         font-weight: 500 !important;
     }
 
     .carousel-caption h1 {
-        font-size: 30px;
-        font-weight: 600 !important;
+        font-size: 23px;
+        font-weight: 500 !important;
+    }
+    .btn {
+        font-weight: 400;
     }
 }
 
@@ -296,6 +293,18 @@ h6,
 .carousel-control-next-icon {
     width: 3rem;
     height: 3rem;
+}
+@media (max-width: 460px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 6%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 
