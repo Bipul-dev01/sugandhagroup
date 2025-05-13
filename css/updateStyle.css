@@ -1227,6 +1227,11 @@ section .title-customer::after {
 .socialBar .linkedin span::after{
   border-right-color: #267a28 ;
 }
+/* @media (max-width : 460px){
+  .socialBar a:hover span{
+    opacity: 0;
+  }
+} */
 /* Fixed Social Icons CSS End */
 
 
