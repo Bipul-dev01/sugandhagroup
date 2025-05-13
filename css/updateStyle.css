@@ -1461,23 +1461,15 @@ section .title-customer::after {
     .category-img:hover {
       transform: scale(1.05);
     }
-
-    .section-title {
-      font-weight: bold;
-      margin-bottom: 30px;
-      text-align: center;
-      color: #333;
-    }
-
-    .category-link {
+    .category-box .category-link {
       text-decoration: none;
       color: inherit;
     }
 
-    .category-link:hover h5 {
+    .category-box .category-link:hover h5 {
       color: #d63384; /* Bootstrap pink */
     }
-/* Cake Image style end */
+
 
 
 /* GSP Lubricant Style start */
