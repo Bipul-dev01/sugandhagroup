@@ -17,6 +17,8 @@
   width: 100%;
   background-color: #f5f4f2;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 .moving-text {
   overflow-x: auto;
@@ -637,7 +639,7 @@ section .title-customer::after {
     transform: translateX(-50%);
   }
   .about .title::after {
-    content: "Message from CEO";
+    content: "Message from MD";
   }
   .about .about-content .left img {
     width: 280px;
