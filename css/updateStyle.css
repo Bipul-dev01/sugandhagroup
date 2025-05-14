@@ -1239,7 +1239,7 @@ section .title-customer::after {
 }
 @media (max-width: 460px){
   .socialBar ion-icon {
-    font-size: 18px;
+    font-size: 20px;
     padding: 8px;
   }
 
